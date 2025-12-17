@@ -35,7 +35,7 @@ const Desktop = () => {
   ];
 
   const appConfigs = {
-    about: { id: 'about', title: 'About Me', icon: User, component: AboutApp, position: { x: 100, y: 80 }, size: { width: 800, height: 600 } },
+    about: { id: 'about', title: 'About Me', icon: User, component: AboutApp, position: { x: 200, y: 80 }, size: { width: 800, height: 600 } },
     skills: { id: 'skills', title: 'Skills Terminal', icon: Terminal, component: SkillsApp, position: { x: 150, y: 100 }, size: { width: 900, height: 650 } },
     projects: { id: 'projects', title: 'Projects Browser', icon: Globe, component: ProjectsApp, position: { x: 200, y: 120 }, size: { width: 1000, height: 700 } },
     timeline: { id: 'timeline', title: 'Career Timeline', icon: Calendar, component: TimelineApp, position: { x: 120, y: 90 }, size: { width: 850, height: 650 } },
