@@ -1,0 +1,28 @@
+/* Minimal App CSS - Main styling handled by Tailwind */
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling for window content */
+.overflow-auto {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(233, 84, 32, 0.5) rgba(0, 0, 0, 0.1);
+}
+
+.overflow-auto::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.overflow-auto::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+    background: rgba(233, 84, 32, 0.5);
+    border-radius: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb:hover {
+    background: rgba(233, 84, 32, 0.7);
+}
