@@ -28,7 +28,7 @@ export const mockData = {
     },
     {
       category: "Backend Development",
-      items: ["Node.js", "FastAPI", "Django", "Express", "GraphQL", "REST APIs"]
+      items: [ "FastAPI", "Django",  "REST APIs"]
     },
     {
       category: "Databases",
