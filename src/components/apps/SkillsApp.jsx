@@ -100,7 +100,6 @@ const SkillsApp = () => {
 
       case 'clear':
         setLines([
-          { type: 'output', text: 'Welcome to Boharey Portfolio Terminal' },
           { type: 'output', text: 'Type "help" to see available commands\n' }
         ]);
         setShowSkills(false);

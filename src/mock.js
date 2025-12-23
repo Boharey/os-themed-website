@@ -5,11 +5,12 @@ export const mockData = {
     name: "Boharey",
     title: "Computer Engineer",
     tagline: "Building innovative solutions with code",
-    email: "boharey@example.com",
+    email: "utsav.bohara.dev@gmail.com",
     phone: "xxxxxxxxx",
+    leetcode: "https://leetcode.com/u/Boharey",
     location: "Pokhara, Nepal",
     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Boharey",
-    bio: "Computer Engineering Student passionate in web-development, system design, and problem-solving. ",
+    bio: "Computer Engineering Student passionate in Web-Development, System Design and Problem-Solving. ",
     social: {
       github: "https://github.com/boharey",
       linkedin: "https://linkedin.com/in/boharey",
@@ -24,11 +25,11 @@ export const mockData = {
     },
     {
       category: "Frontend Development",
-      items: ["React", "Tailwind CSS","Framer Motion", "Redux", "HTML5/CSS3"]
+      items: ["React", "Tailwind CSS", "Framer Motion", "Redux", "HTML5/CSS3"]
     },
     {
       category: "Backend Development",
-      items: [ "FastAPI", "Django",  "REST APIs"]
+      items: [ "FastAPI", "Django", "REST APIs"]
     },
     {
       category: "Databases",
@@ -36,7 +37,7 @@ export const mockData = {
     },
     {
       category: "DevOps & Tools",
-      items: [ "AWS", "Git", "CI/CD", "Linux"]
+      items: [ "Git/GitHub", "CI/CD", "Linux"]
     },
     {
       category: "Other",
@@ -60,27 +61,36 @@ export const mockData = {
   timeline: [
     {
       id: 1,
-      title: "Computer Engineering Student",
-      company: "",
+      title: "Engineering Student",
+      company: {
+        name : "Pashimanchal College,IOE",
+        url : "https://ioepas.edu.np/"
+      },
       period: "2021 - Present",
-      description: "Learning about CS concepts DSA, CN, DBMS, AI/ML, Mathematics.",
+      description: "Learning about CS concepts like DSA, CN, DBMS, AI/ML, DSAP etc.",
       type: "study"
     },
     {
       id: 2,
       title: "Science Student",
-      company: "KIST College & SS",
+      company: {
+        name : "KIST College & SS",
+        url : "https://kist.edu.np/"
+      } ,
       period: "2019 - 2021",
       description: "Studied and Learned High School Physics, Maths, Chemistry and Computer Science.",
-      type: "work"
+      type: "study"
     },
     {
       id: 3,
       title: "Student",
-      company: "Siddharth Boarding School",
-      period: "childhood - 2021",
+      company: {
+        name : "Siddharth Boarding School",
+        url : "https://siddharth.edu.np"
+      },
+      period: "childhood - 2019",
       description: "Studied Until Class 10(SEE).",
-      type: "work"
+      type: "study"
     }
   ],
 

@@ -63,10 +63,11 @@ const ResumeApp = () => {
               gap-2 md:gap-6
               text-sm text-gray-600 dark:text-gray-400
             ">
+              <span className="hidden md:inline">•</span>
               <span>{mockData.user.email}</span>
               <span className="hidden md:inline">•</span>
-              <span>{mockData.user.phone}</span>
-              <span className="hidden md:inline">•</span>
+              {/* <span>{mockData.user.phone}</span>
+              <span className="hidden md:inline">•</span> */}
               <span>{mockData.user.location}</span>
             </div>
           </div>
@@ -116,7 +117,7 @@ const ResumeApp = () => {
                           {item.title}
                         </h3>
                         <p className="text-gray-600 dark:text-gray-400">
-                          {item.company}
+                          {item.company.name}
                         </p>
                       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mockData } from '../../mock';
-import { Github, Linkedin, Twitter, MapPin, Mail, Phone } from 'lucide-react';
+import { Github, Linkedin, Twitter, MapPin, Mail, Code } from 'lucide-react';
 
 const AboutApp = () => {
   const { user } = mockData;
@@ -42,7 +42,15 @@ const AboutApp = () => {
             </div>
             <div>
               <div className="text-xs text-gray-500 dark:text-gray-400">Email</div>
-              <div className="text-sm font-medium text-gray-900 dark:text-white">{user.email}</div>
+              <div className="text-sm font-medium text-gray-900 dark:text-white">
+                <a href={`mailto:${user.email}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-[#E95420] hover:underline"
+                >
+                  {user.email}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -50,11 +58,21 @@ const AboutApp = () => {
         <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4">
           <div className="flex items-center gap-3 mb-3">
             <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center">
-              <Phone className="w-5 h-5 text-white" />
+              <Code className="w-5 h-5 text-white" />
             </div>
             <div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">Phone</div>
-              <div className="text-sm font-medium text-gray-900 dark:text-white">{user.phone}</div>
+              <div className="text-xs text-gray-500 dark:text-gray-400">leetcode</div>
+              <div className="flex items-center gap-2">
+                <a
+                  href={user.leetcode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-[#E95420] hover:underline"
+                >
+                  leetcode/u/boharey
+                </a>
+              </div>
+
             </div>
           </div>
         </div>

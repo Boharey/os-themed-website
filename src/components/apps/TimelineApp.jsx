@@ -1,6 +1,6 @@
 import React from 'react';
 import { mockData } from '../../mock';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase, GraduationCap, ExternalLink, Star } from 'lucide-react';
 
 const TimelineApp = () => {
   return (
@@ -28,15 +28,26 @@ const TimelineApp = () => {
                 {/* Content Card */}
                 <div className="bg-white dark:bg-[#2C2C2C] rounded-lg p-6 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow">
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white flex items-start gap-1">
                       {item.title}
+                      {item.period.includes('Present') && (
+                        <Star className="w-4 h-4 text-[#E95420] mt-1" fill="currentColor" />
+                      )}
                     </h3>
                     <span className="text-sm font-medium text-[#E95420] bg-[#E95420]/10 px-3 py-1 rounded-full">
                       {item.period}
                     </span>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 font-medium mb-3">
-                    {item.company}
+                  <p className="text-gray-600 dark:text-gray-400 font-medium mb-3 flex items-center gap-1">
+                    <a
+                      href={item.company.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#E95420] hover:underline transition-colors inline-flex items-center gap-1"
+                    >
+                      {item.company.name}
+                      <ExternalLink size={14} />
+                    </a>
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     {item.description}
