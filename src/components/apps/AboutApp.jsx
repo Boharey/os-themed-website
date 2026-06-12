@@ -6,47 +6,50 @@ const AboutApp = () => {
   const { user } = mockData;
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
+    <div className="p-6 max-w-4xl mx-auto bg-white dark:bg-[#1E1E1E] min-h-screen">
       {/* Header Section */}
-      <div className="flex items-start gap-6 mb-8">
-        <img
-          src={user.avatar}
-          alt={user.name}
-          className="w-32 h-32 rounded-full border-4 border-[#E95420] shadow-lg"
-        />
+      <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
+        <div className="flex flex-col items-center flex-shrink-0">
+          <img
+            src={user.avatar}
+            alt={user.name}
+            className="w-32 h-32 rounded-full border-4 border-[#E95420] shadow-lg hover:shadow-xl transition-shadow duration-300"
+          />
+          <div className="text-5xl mt-2 animate-bounce" style={{ animationDuration: '2s' }}>
+            {user.avatarEmoji}
+          </div>
+        </div>
         <div className="flex-1">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
             {user.name}
           </h1>
           <p className="text-xl text-[#E95420] font-medium mb-3">{user.title}</p>
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
             {user.tagline}
           </p>
         </div>
       </div>
 
       {/* Bio Section */}
-      <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-6 mb-6">
+      <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-6 mb-6 border border-gray-200 dark:border-gray-700 hover:border-[#E95420] transition-colors duration-300">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
-        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-base">
           {user.bio}
         </p>
       </div>
 
       {/* Contact Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-[#E95420] hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center flex-shrink-0">
               <Mail className="w-5 h-5 text-white" />
             </div>
-            <div>
+            <div className="min-w-0">
               <div className="text-xs text-gray-500 dark:text-gray-400">Email</div>
-              <div className="text-sm font-medium text-gray-900 dark:text-white">
+              <div className="text-sm font-medium text-gray-900 dark:text-white truncate">
                 <a href={`mailto:${user.email}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-[#E95420] hover:underline"
+                  className="hover:text-[#E95420] hover:underline transition-colors duration-200"
                 >
                   {user.email}
                 </a>
@@ -55,31 +58,30 @@ const AboutApp = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4">
+        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:border-[#E95420] hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center flex-shrink-0">
               <Code className="w-5 h-5 text-white" />
             </div>
-            <div>
-              <div className="text-xs text-gray-500 dark:text-gray-400">leetcode</div>
-              <div className="flex items-center gap-2">
+            <div className="min-w-0">
+              <div className="text-xs text-gray-500 dark:text-gray-400">LeetCode</div>
+              <div className="flex items-center gap-2 truncate">
                 <a
                   href={user.leetcode}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-[#E95420] hover:underline"
+                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-[#E95420] hover:underline transition-colors duration-200 truncate"
                 >
                   leetcode/u/boharey
                 </a>
               </div>
-
             </div>
           </div>
         </div>
 
-        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4 md:col-span-2">
+        <div className="bg-gray-50 dark:bg-[#2C2C2C] rounded-lg p-4 md:col-span-2 border border-gray-200 dark:border-gray-700 hover:border-[#E95420] hover:shadow-md transition-all duration-300">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-[#E95420] rounded-lg flex items-center justify-center flex-shrink-0">
               <MapPin className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -91,33 +93,33 @@ const AboutApp = () => {
       </div>
 
       {/* Social Links */}
-      <div className="flex gap-3">
+      <div className="flex flex-col sm:flex-row gap-3">
         <a
           href={user.social.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 bg-gray-900 hover:bg-gray-800 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-colors"
+          className="flex-1 bg-gray-900 hover:bg-gray-800 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 font-medium"
         >
           <Github className="w-5 h-5" />
-          <span className="font-medium">GitHub</span>
+          <span>GitHub</span>
         </a>
         <a
           href={user.social.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-colors"
+          className="flex-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 font-medium"
         >
           <Linkedin className="w-5 h-5" />
-          <span className="font-medium">LinkedIn</span>
+          <span>LinkedIn</span>
         </a>
         <a
           href={user.social.twitter}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 bg-sky-500 hover:bg-sky-600 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-colors"
+          className="flex-1 bg-sky-500 hover:bg-sky-600 text-white rounded-lg p-4 flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 font-medium"
         >
           <Twitter className="w-5 h-5" />
-          <span className="font-medium">Twitter</span>
+          <span>Twitter</span>
         </a>
       </div>
     </div>
