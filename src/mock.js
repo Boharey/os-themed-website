@@ -62,8 +62,8 @@ export const mockData = {
       description: "A comprehensive dummy data generation tool for testing and development. Generates realistic mock data for various use cases including user profiles, transactions, and API responses.",
       tech: ["Python", "FastAPI", "MongoDB", "React"],
       image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
-      link: "https://github.com/boharey/dummy-gen",
-      github: "https://github.com/boharey/dummy-gen"
+      link: "https://github.com/boharey/dummygen",
+      github: "https://github.com/boharey/dummygen"
     },
     {
       id: 3,
