@@ -9,7 +9,8 @@ export const mockData = {
     phone: "xxxxxxxxx",
     leetcode: "https://leetcode.com/u/Boharey",
     location: "Pokhara, Nepal",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Boharey",
+    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&style=pixel-art&gender=male",
+    avatarEmoji: "👨‍💻",
     bio: "Computer Engineering Student passionate in Web-Development, System Design and Problem-Solving. ",
     social: {
       github: "https://github.com/boharey",
@@ -54,8 +55,25 @@ export const mockData = {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
       link: "#",
       github: "#"
+    },
+    {
+      id: 2,
+      title: "Dummy-Gen",
+      description: "A comprehensive dummy data generation tool for testing and development. Generates realistic mock data for various use cases including user profiles, transactions, and API responses.",
+      tech: ["Python", "FastAPI", "MongoDB", "React"],
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
+      link: "https://github.com/boharey/dummy-gen",
+      github: "https://github.com/boharey/dummy-gen"
+    },
+    {
+      id: 3,
+      title: "Portfolio Website",
+      description: "An OS-themed interactive portfolio website showcasing projects, skills, and experience with a unique desktop-like user interface.",
+      tech: ["React", "Tailwind CSS", "Vercel"],
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop",
+      link: "https://os-themed-website.vercel.app",
+      github: "https://github.com/boharey/os-themed-website"
     }
-    
   ],
 
   timeline: [
