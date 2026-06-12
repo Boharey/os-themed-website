@@ -9,13 +9,13 @@ const AboutApp = () => {
     <div className="p-6 max-w-4xl mx-auto bg-white dark:bg-[#1E1E1E] min-h-screen">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
-        <div className="flex flex-col items-center flex-shrink-0">
+        <div className="flex items-center gap-4 flex-shrink-0">
           <img
             src={user.avatar}
             alt={user.name}
             className="w-32 h-32 rounded-full border-4 border-[#E95420] shadow-lg hover:shadow-xl transition-shadow duration-300"
           />
-          <div className="text-5xl mt-2 animate-bounce" style={{ animationDuration: '2s' }}>
+          <div className="text-5xl animate-bounce" style={{ animationDuration: '2s' }}>
             {user.avatarEmoji}
           </div>
         </div>
