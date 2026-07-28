@@ -6,7 +6,7 @@ export const mockData = {
     title: "Computer Engineer",
     tagline: "Building innovative solutions with code",
     email: "utsav.bohara.dev@gmail.com",
-    phone: "xxxxxxxxx",
+    phone: "9868491151",
     leetcode: "https://leetcode.com/u/Boharey",
     location: "Pokhara, Nepal",
     avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix&style=pixel-art&gender=male",
@@ -49,12 +49,12 @@ export const mockData = {
   projects: [
     {
       id: 1,
-      title: "Real-Time Analytics Dashboard",
-      description: "Built a comprehensive analytics platform with real-time data visualization, user behavior tracking, and custom reporting features.",
-      tech: ["React", "MongoDB", "WebSockets", "D3.js"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
-      link: "#",
-      github: "#"
+      title: "NEC Practice",
+      description: "A responsive web platform for Nepal Engineering Council (NEC) Computer Engineering license exam preparation featuring syllabus-wise study materials, chapter-based practice questions, and mock examinations for effective self-paced learning.",
+      tech: ["HTML5", "CSS3", "JavaScript"],
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop",
+      link: "https://nec-computer-engineering.vercel.app",
+      github: "https://github.com/Boharey/nec-practice"
     },
     {
       id: 2,
